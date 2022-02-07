@@ -33,7 +33,7 @@ create table estadios(
 INSERT INTO 
     estadios (edicao, ano, estadio, "local", publico_pagante) 
 VALUES 
-    ('I','1930',	'Estádio Centenário','Montevidéu',68346),
+   	('I','1930',	'Estádio Centenário','Montevidéu',68346),
 	('II',	'1934',	'Estádio do Partido Nacional Fascista',	'Roma',55000),
 	('III',	'1938',	'Estádio Olímpico Yves-du-Manoir','Colombes',45000),
 	('IV',	'1950',	'Estádio do Maracanã','Rio de Janeiro',173850),
@@ -66,7 +66,7 @@ select *
 from estadios where publico_pagante > 50000 and publico_pagante < 100000;
 
 select *
-from estadios where estadio ilike '%y';
+from estadios where estadio like '%y';
 
 alter table
     estadios 
